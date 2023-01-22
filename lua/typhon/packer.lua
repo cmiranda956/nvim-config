@@ -40,10 +40,10 @@ return require('packer').startup(function(use)
 	    },
 	    tag = 'nightly' -- optional, updated every week. (see issue #1193)
     }
-    use{
+    use({
         'nvim-treesitter/nvim-treesitter',
-        run = ':TSUpdate'
-    }
+        {run = ':TSUpdate'}
+    })
  
   end)
 
