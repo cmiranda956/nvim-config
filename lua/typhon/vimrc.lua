@@ -11,23 +11,25 @@ end
 function imap(shortcut, command)
 	map('i', shortcut, command)
 end
+local set = vim.opt 
 
-vim.opt.syntax = "on"
-vim.opt.cursorline = true
-vim.opt.lazyredraw = true
-vim.opt.relativenumber = true
-vim.opt.autoindent = true
-vim.opt.showmatch = true
-vim.opt.wildmenu = true
-vim.opt.expandtab = true
-vim.opt.shiftwidth = 4
-vim.opt.softtabstop = 4
-vim.opt.tabstop = 4
-vim.opt.ignorecase = true
-vim.opt.hlsearch = true
-vim.opt.incsearch = true
-vim.opt.scrolloff = 10
-vim.opt.sidescrolloff = 10
+set.syntax = "on"
+set.cursorline = true
+set.lazyredraw = true
+set.number = true
+set.relativenumber = true
+set.autoindent = true
+set.showmatch = true
+set.wildmenu = true
+set.expandtab = true
+set.shiftwidth = 4
+set.softtabstop = 4
+set.tabstop = 4
+set.ignorecase = true
+set.hlsearch = true
+set.incsearch = true
+set.scrolloff = 10
+set.sidescrolloff = 10
 
 nmap("<leader><space>", ":nohlsearch<CR>")
 nmap("<C-T> ", ":botright terminal<CR>")
