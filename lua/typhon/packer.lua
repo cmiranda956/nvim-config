@@ -32,7 +32,7 @@ return require('packer').startup(function(use)
           -- Snippets
           {'L3MON4D3/LuaSnip'},
           -- Snippet Collection (Optional)
-          {'rafamadriz/friendly-snippets'},
+          {'rafamadriz/friendly-snippets'}
       }
   }
   use {

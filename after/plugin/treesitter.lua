@@ -13,4 +13,13 @@ require('nvim-treesitter.configs').setup {
     -- `false` will disable the whole extension
     enable = true,
   },
+  incremental_selection = {
+      enable = true,
+      keymaps = {
+          init_selection = '`<TAB>',
+          scope_incremental = '`<TAB>',
+          node_incremental = '<TAB>',
+          node_decremental = '<S-TAB>'
+      }
+  },
 }
