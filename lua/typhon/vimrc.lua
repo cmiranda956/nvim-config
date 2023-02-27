@@ -41,19 +41,3 @@ nmap("<leader>n", ":NvimTreeFocus<CR>")
 nmap("<leader><Tab>", ":NvimTreeFindFileToggle<CR>")
 nmap("<C-u>", ":tabprevious<CR>")
 nmap("<C-i>", ":tabnext<CR>")
-
-
-
--- Setup win32yank
-vim.g.clipboard = {
-  name = "win32yank-wsl",
-  copy = {
-    ["+"] = "win32yank.exe -i --crlf",
-    ["*"] = "win32yank.exe -i --crlf"
-  },
-  paste = {
-    ["+"] = "win32yank.exe -o --crlf",
-    ["*"] = "win32yank.exe -o --crlf"
-  },
-  cache_enable = 0,
-}
