@@ -22,7 +22,6 @@ return require('packer').startup(function(use)
         'nvim-telescope/telescope.nvim', tag = '0.1.1',
         requires = {
             {'nvim-lua/plenary.nvim'},
-            {'BurntSushi/ripgrep'},
             {
                 'nvim-telescope/telescope-fzf-native.nvim',
                 run = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build'
@@ -71,6 +70,9 @@ return require('packer').startup(function(use)
     use {
         'vim-airline/vim-airline'
     }
+    use { 'lukas-reineke/indent-blankline.nvim' }
+
+
     if packer_bootstrap then
         require('packer').sync()
     end

@@ -109,6 +109,11 @@ _G.packer_plugins = {
     path = "/home/typhon/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  ["indent-blankline.nvim"] = {
+    loaded = true,
+    path = "/home/typhon/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
+    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
+  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/home/typhon/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
@@ -158,11 +163,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/typhon/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
-  },
-  ripgrep = {
-    loaded = true,
-    path = "/home/typhon/.local/share/nvim/site/pack/packer/start/ripgrep",
-    url = "https://github.com/BurntSushi/ripgrep"
   },
   ["telescope-fzf-native.nvim"] = {
     loaded = true,
