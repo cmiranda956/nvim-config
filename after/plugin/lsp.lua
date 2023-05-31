@@ -5,9 +5,9 @@ lsp.preset('recommended')
 local cmp = require('cmp')
 local cmp_select = {behavior = cmp.SelectBehavior.Select}
 local cmp_mappings = lsp.defaults.cmp_mappings({
-		['<C-k>'] = cmp.mapping.select_prev_item(cmp_select),
-		['<C-j>'] = cmp.mapping.select_next_item(cmp_select),
-		['<C><CR>'] = cmp.mapping.confirm({ select = true }),
+		["<C-k>"] = cmp.mapping.select_prev_item(cmp_select),
+		["<C-j>"] = cmp.mapping.select_next_item(cmp_select),
+		["<CR>"] = cmp.mapping.confirm({ select = true }),
 		["<C-Space>"] = cmp.mapping.complete(),
 })
 
